@@ -3,21 +3,9 @@
       "esModuleInterop": true,
       "module": "es6",
       "moduleResolution": "node",
-      "outDir": "dist",
-      "baseUrl": "src",
-      "paths": {
-        "@/": [
-          ""
-        ]
-      },
-      "plugins": [
-        {
-          "transform": "typescript-transform-paths"
-        }
-      ]
+      "outDir": "dist"
     },
     "ts-node": {
-      "esm": true,
-      "experimentalSpecifierResolution": "node",
-  }
+      "esm": true
+    }
 }
