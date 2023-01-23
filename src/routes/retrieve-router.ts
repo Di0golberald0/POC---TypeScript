@@ -1,7 +1,8 @@
 import { Router } from "express";
+import { getList } from "../controllers";
 
 const retrieveRouter = Router();
 
-retrieveRouter.get("/", );
+retrieveRouter.get("/", getList);
 
 export { retrieveRouter };

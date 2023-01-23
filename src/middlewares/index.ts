@@ -1,2 +1,1 @@
-export * from "movie-middleware";
-export * from "update-middleware";
+export * from "./validation-middleware";

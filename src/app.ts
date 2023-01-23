@@ -1,12 +1,12 @@
 import cors from "cors";
-import express from "express";
+import express, { Request, Response } from "express";
 import { createRouter, deleteRouter, retrieveRouter, updateRouter } from "./routes";
 
 const app = express();
 app
   .use(cors())
   .use(express.json())
-  .get("/health", (_req, res) => res.send("OK!"))
+  .get("/health", (_req: Request, res: Response) => res.send("OK!"))
   .use(retrieveRouter)
   .use(createRouter)
   .use(updateRouter)

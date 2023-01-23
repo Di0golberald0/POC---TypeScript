@@ -1,12 +1,12 @@
-export type Movie = {
+export type MovieEntity = {
   name: string,
   genre: string,
   platform: string,
   status: boolean,
-};
-
-export type Update = {
-  name: string,
   rating: number,
   synopsis: string,
 };
+
+export type Movie = Omit<MovieEntity, "rating" | "synopsis">;
+
+export type Update = Partial<MovieEntity>;
