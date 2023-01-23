@@ -1,4 +1,4 @@
-export type MovieEntity = {
+export type Movie = {
   name: string,
   genre: string,
   platform: string,
@@ -7,6 +7,4 @@ export type MovieEntity = {
   synopsis: string,
 };
 
-export type Movie = Omit<MovieEntity, "rating" | "synopsis">;
-
-export type Update = Partial<MovieEntity>;
+export type Update = Partial<Movie>;

@@ -4,6 +4,6 @@ CREATE TABLE movies (
     "genre" TEXT NOT NULL,
 	"platform" TEXT NOT NULL,
 	"status" BOOLEAN NOT NULL DEFAULT FALSE,
-    "rating" INTEGER NOT NULL,
+    "rating" NUMERIC NOT NULL,
     "synopsis" TEXT NOT NULL
 );
