@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { getMovieList } from "repositories/retrieve-repository";
 import { Movie, MovieEntity } from "../protocols";
 import { addNewMovie } from "../repositories/create-repository";
+import { getMovieList } from "../repositories/retrieve-repository";
 
 export async function addMovie(_req: Request, res: Response) {
     const movie = _req.body as Movie;

@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { MovieEntity, Update } from "protocols";
+import { MovieEntity, Update } from "../protocols";
 import { getMovieList } from "../repositories/retrieve-repository";
 import { updateMovieStatus } from "../repositories/update-repository";
 

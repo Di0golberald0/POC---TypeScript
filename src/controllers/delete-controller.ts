@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { Movie, MovieEntity } from "protocols";
-import { getMovieList } from "repositories/retrieve-repository";
+import { MovieEntity } from "../protocols";
 import { removeMovie } from "../repositories/delete-repository";
+import { getMovieList } from "../repositories/retrieve-repository";
 
 export async function deleteMovie(_req: Request, res: Response) {
     const movie:string = _req.body;

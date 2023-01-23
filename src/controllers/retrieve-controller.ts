@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { MovieEntity } from "protocols";
+import { MovieEntity } from "../protocols";
 import { getMovieList } from "../repositories/retrieve-repository";
 
 export async function getList(_req: Request, res: Response) {
