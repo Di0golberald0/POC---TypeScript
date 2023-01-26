@@ -1,4 +1,4 @@
-import { connection } from "../../../database/database";
+import { connection } from "../../database";
 import { Movie } from "../../protocols";
 
 export async function addNewMovie(newMovie: Movie) {

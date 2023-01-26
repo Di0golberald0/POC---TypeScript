@@ -1,4 +1,4 @@
-import { connection } from "../../../database/database";
+import { connection } from "../../database";
 import { Update } from "../../protocols";
 
 export async function updateMovieStatus(movieUpdate: Update) {

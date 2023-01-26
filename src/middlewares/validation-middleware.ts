@@ -2,6 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import { ObjectSchema } from "joi";
 
 export function validateMovie(schema: ObjectSchema) {
+  console.log("rodei")
   return (req: Request, res: Response, next: NextFunction) => {
     const validation = schema.validate(req.body);
     if (validation.error) {
